@@ -92,7 +92,7 @@ DATABASES = {
 }
 #facebook app id and secret key for authentication
 SOCIAL_AUTH_FACEBOOK_KEY = '170560813533515'
-SOCIAL_AUTH_FACEBOOK-SECRET = '430ffa5e3e6a4a0117e0a4080cf2c86a'
+SOCIAL_AUTH_FACEBOOK_SECRET = '430ffa5e3e6a4a0117e0a4080cf2c86a'
 #to ask extra parameter SOCIAL_AUTH_FACEBOOK_SCOPE=['email']
 
 #authentication backends
