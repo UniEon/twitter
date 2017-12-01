@@ -39,6 +39,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'accounts',
+    'social.apps.django_app.default',
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -89,11 +90,16 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+#facebook app id and secret key for authentication
+SOCIAL_AUTH_FACEBOOK_KEY = '170560813533515'
+SOCIAL_AUTH_FACEBOOK-SECRET = '430ffa5e3e6a4a0117e0a4080cf2c86a'
+#to ask extra parameter SOCIAL_AUTH_FACEBOOK_SCOPE=['email']
 
 #authentication backends
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'accounts.authentication.EmailAuthBackend',
+    'social.backends.facebook.Facebook2OAuth2',
 )
 
 # Internationalization
